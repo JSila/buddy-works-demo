@@ -21,6 +21,7 @@ describe('GET /', function() {
             .expect(200, done);
     })
 
+    // just to make sure our tests are running right
     it('it does not respond with development-string', function(done) {
         request(app).get('/')
             .set('Accept', 'application/json')
